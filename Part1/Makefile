@@ -1,10 +1,16 @@
 all: clean build init
 
 build:
-	gcc Part1.c -o Part1.o
+	gcc StaticFunction.c -o StaticFunction.o
+	gcc -S StaticFunction.c
+	gcc NoStaticFunction.c -o NoStaticFunction.o
+	gcc -S NoStaticFunction.c
+	gcc test.c -o test.o
+	valgrind --tool=callgrind --cache-sim=yes ./test.o
 
 init:
-	./Part1.o 
+	./test.o
+	kcachegrind callgrind.out.*
 
 clean:
-	rm -rf ./*.o
+	rm -rf ./*.o ./*.s ./callgrind.out.*
