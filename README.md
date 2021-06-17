@@ -43,7 +43,7 @@ _Donde objectFile representa el path, donde se encuentra el archivo ejecutable,r
 $ kcachegrind callgrind.out.*
 ```
 
-Dicho comando ya se incluye de manera correcta en los Makefile. El archivo callgrind.out.*, corresponde con el reporte generado luego de ejecutar el análisis de callgrind, donde el último parámetro indica con * representa el ID del proceso ejecutado, por lo tanto dicho número varía dependiendo del sistema donde se ejecute.
+Dicho comando ya se incluye de manera correcta en los Makefile. El archivo callgrind.out.*, corresponde con el reporte generado luego de ejecutar el análisis de callgrind, donde el último parámetro indicado con * representa el ID del proceso ejecutado, por lo tanto dicho número varía dependiendo del sistema donde se ejecute.
 
 ## Autores ✒️
 
