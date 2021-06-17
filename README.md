@@ -14,7 +14,7 @@ $ sudo apt-get install kcachegrind
 
 ## Ejecutando las pruebas ⚙️
 
-_Si se desea ejecutar lós códigos generados, para cada uno de las partes del problema analizado, basta con abrir un nuevo terminal en los directorios de Part1 o Part2, según necesite y ejecutar el siguiente comando:_
+_Si se desea ejecutar los códigos generados, para cada uno de las partes del problema analizado, basta con abrir un nuevo terminal en los directorios de Part1 o Part2, según necesite y ejecutar el siguiente comando:_
 
 ```
 $ make
@@ -40,10 +40,10 @@ valgrind --tool=callgrind --cache-sim=yes ./objectFile
 _Donde objectFile representa el path, donde se encuentra el archivo ejecutable,resultado de la compilación ya sea del código C o C++. Y finalmente, para lanzar el GUI de kcachegrind y visualizar los datos de manera gráfica se utiliza el comando:_
 
 ```
-kcachegrind callgrind.out.*
+$ kcachegrind callgrind.out.*
 ```
 
-Dicho comando ya se incluye de manera correcta en los Makefile. El archivo callgrin.out.*, corresponde con el reporte generado luego de ejecutar el análisis de callgrind, donde el último parámetro indica con * representa el ID del proceso ejecutado, por lo tanto dicho número varía dependiendo del sistema donde se ejecute.
+Dicho comando ya se incluye de manera correcta en los Makefile. El archivo callgrind.out.*, corresponde con el reporte generado luego de ejecutar el análisis de callgrind, donde el último parámetro indica con * representa el ID del proceso ejecutado, por lo tanto dicho número varía dependiendo del sistema donde se ejecute.
 
 ## Autores ✒️
 
